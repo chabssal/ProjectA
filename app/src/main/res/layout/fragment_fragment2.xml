@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/stopWatch_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stopWatch_performance"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="앱 프로젝트 개발"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/stopWatch_goalTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="목표시간: 3시간"
+                android:textColor="#50bcdf"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp">
+
+            <TextView
+                android:id="@+id/stopWatch_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="02:30"
+                android:textSize="100dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/stopWatch_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="00"
+                android:textSize="50dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="330dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="#50bcdf"
+                    android:text="start"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/restart"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="#50bcdf"
+                    android:visibility="invisible"
+                    android:text="restart"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/stop"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#000000"
+                    android:text="stop"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="#000000"
+                        android:text="reset"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"/>
+
+                    <Button
+                        android:id="@+id/record"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="#000000"
+                        android:visibility="invisible"
+                        android:text="기록"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
